@@ -1,0 +1,158 @@
+<p>hello-student works!</p>
+<!-- <h1>{{firstName}} {{lastName}}</h1> -->
+<!-- <h1 [innerText]="title" ></h1> -->
+
+<!-- <h1>{{name}}</h1>
+<br>
+<input type="text" [(ngModel)]="name"> -->
+
+<!-- <h1>{{title}}</h1> -->
+
+<!-- <h1>{{'hello ' + 'world ' + 'to ' + 'angular'}}</h1> -->
+
+<!-- <h1>{{getTitle()}}</h1> -->
+
+
+<!-- <p>10 * 10 = {{100 * 10}}</p> -->
+
+<!-- <p>Largest Number : {{getMax(100, 200)}}</p> -->
+
+<!-- <p style.color="{{color}}" >This is red</p> -->
+
+<!-- <h1 [innerText] = "title"></h1> -->
+
+<!-- <button [disabled]="isDisabled" >Click Me</button> -->
+
+<!-- <button [attr.disabled]="isDisabled" >Click Me</button> -->
+
+<!-- <p [innerText]="'Welcome to' + ' Angular' "></p> -->
+
+<!-- <p>you have clicked {{clickCount}}</p> -->
+
+<!-- <button (click) = "clickMe()" >click me!</button> -->
+
+<!-- <button on-click = "clickMe()" >click me!</button> 
+
+ <p>you have clicked {{clickCount}}</p>
+
+<p>copy clickcount {{clickCount1}}</p>
+
+<button (click) = "clickMe(); clickCount1=clickCount" >click me!</button>
+
+<input type="text">  -->
+
+<!-- Type Something <input type="text" (input) = "handleInput($event)"> -->
+
+<!-- Type Something <input type="text" (input) = "handleInput($event); valueData1=$any($event.target).value">
+
+<p>With handleinput Function:{{valueData}}</p>
+<p>Without handleinput Function: {{valueData}}</p> -->
+
+<!-- <h1>{{title}}</h1>
+
+<ul>
+    <li *ngFor="let book of books">
+         {{book}}
+    </li>
+</ul> -->
+
+<!-- <h1>{{title}}</h1> -->
+<!-- 
+<ul>
+    <li *ngFor="let book of books; let i = index">
+         {{i+1}} : {{book.title}} - {{book.author}} - ${{book.price}}
+     </li>
+</ul>  
+
+<div class="panel panel-primary"> 
+    <div class="panel-heading">
+        {{title}}
+    </div>
+    <div class="panel-body">
+        <div class="panel-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>S.no</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr 
+                    [ngClass] = '{"bg-warning": f, "bg-info": l}'
+                    *ngFor="let book of books; let i = index, let o = odd; let e = even; let f = first; let l = last;">
+                        <td>{{i+1}}</td>
+                         <td>{{book.title}}</td>
+                         <td>{{book.author}}</td>
+                         <td>${{book.price}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+[ngClass] = '{"bg-success": o, "bg-danger": e, "bg-warning": f}' 
+<label for="">Type Num:</label>
+<input type="number"  [(ngModel)]="num">
+<div [ngSwitch]="num">
+    <div *ngSwitchCase="1">One</div>
+    <div *ngSwitchCase="2">Two</div>
+    <div *ngSwitchCase="3">Three</div>
+    <div *ngSwitchCase="4">Four</div>
+</div> -->
+
+<!-- <h1>ng If Example</h1>-->
+
+ <!-- <div class="row">
+      <label for="">Checkbox<input type="checkbox" [(ngModel)]="showMe"></label>
+</div> 
+{{showMe}} 
+
+<div  *ngIf="showMe; then thenBlock else elseBlock">
+
+</div>
+
+
+<ng-template #thenBlock>
+    <p>Show me is checked</p>
+</ng-template> -->
+
+
+
+
+<!-- <p *ngIf="!showMe">Show me is Unchecked</p>   -->
+
+<!-- <p *ngIf="true">Did you see me</p> -->
+
+<!-- <ng-template #elseBlock>
+    <p>Show me is Unchecked</p> 
+</ng-template> -->
+
+<!-- <div [ngClass]="
+ 'primary', 'big', 'italics']">
+    Sample Test 
+</div> -->
+
+Red: <input type="checkbox" [(ngModel)]="enableRed">
+Big: <input type="checkbox" [(ngModel)]="enableBig">
+Italics: <input type="checkbox" [(ngModel)]="enableItalics">
+<div [ngClass]="
+{ 
+    'primary': enableRed,
+    'big': enableBig,
+    'italics': enableItalics
+     
+}">
+    Sample Test 
+</div>
+
+
+
+
+
+
+
+
